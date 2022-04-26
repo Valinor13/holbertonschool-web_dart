@@ -5,6 +5,14 @@ This repository contains projects intended to teach the fundamentals of Dart. Da
 
 1. Dart - Hello Dart
 
+Installation on Windows (run Command Prompt as administrator):
+-----
+
+```
+choco install dart-sdk
+choco upgrade dart-sdk
+```
+
 Contributor
 <br>
 [Jay Calhoun](https://www.github.com/Valinor13)
