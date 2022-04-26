@@ -22,4 +22,4 @@ dart [filename]
 Contributing
 ------------
 
-[Contributing](https://www.github.com/Valinor13)
+[Jay Calhoun](https://www.github.com/Valinor13)
