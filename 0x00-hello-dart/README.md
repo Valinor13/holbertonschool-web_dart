@@ -17,6 +17,7 @@ Usage
 
 ```
 dart [filename]
+dart --enable-asserts 5-assertion.dart [integer]
 ```
 
 Contributing
