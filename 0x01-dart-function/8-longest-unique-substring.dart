@@ -2,34 +2,30 @@
 // @str: the input String
 // @return: the longest non-repeating substring, if multiple return the first occurence
 String longestUniqueSubstring(String str) {
-  int i;
-  int strLength = str.length;
-  int currentStart = 0;
-  int currentLength = 0;
-  int longestLength = 0;
-  int longestStart = 0;
-  Map pos = {};
-  pos[str[0]] = 0;
-  for (i = 1; i < strLength; i++) {
-    if (pos[str[i]] == null) {
-      pos[str[i]] = i;
-    } else {
-      if (pos[str[i]] >= currentStart) {
-        currentLength = i - currentStart;
-        if (longestLength < currentLength) {
-          longestLength = currentLength;
-          longestStart = currentStart;
-        }
-        currentStart = pos[str[i]] + 1;
+  if (str.length < 3) return '';
+  String longest = '';
+  String current = '';
+  for (int i = 0; i < str.length; i++) {
+    for (int j = i; j < str.length; j++) {
+      current = str.substring(i, j + 1);
+      if (current.length > longest.length && isUnique(current)) {
+        longest = current;
       }
-      pos[str[i]] = i;
     }
   }
+  return longest;
+}
 
-  if (longestLength < i - currentStart) {
-    longestLength = i - currentStart;
-    longestStart = currentStart;
+// isUnique - determines if the input string has all unique characters
+// @str: the input String
+// @return: true if all characters are unique, false otherwise
+bool isUnique(String str) {
+  Map<String, int> map = {};
+  for (int i = 0; i < str.length; i++) {
+    if (map.containsKey(str[i])) {
+      return false;
+    }
+    map[str[i]] = 1;
   }
-
-  return str.substring(longestStart, longestLength);
+  return true;
 }
