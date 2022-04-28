@@ -14,7 +14,5 @@ class Password {
       password.contains(new RegExp(r'[A-Z]')) &&
       password.contains(new RegExp(r'[0-9]'));
 
-  String toString() {
-    return 'Your Password is: ${password}';
-  }
+  String toString() => 'Your Password is: ${password}';
 }
