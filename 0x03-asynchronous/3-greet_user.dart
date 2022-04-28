@@ -8,7 +8,7 @@ Future<String> greetUser() async {
   try {
     final Map<String, dynamic> userData =
         await json.decode(await fetchUserData());
-    return 'Hello ${userData['username']}';
+    return 'hello ${userData['username']}';
   } catch (e) {
     return 'error caught: $e';
   }
