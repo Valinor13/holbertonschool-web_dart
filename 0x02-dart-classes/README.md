@@ -1,14 +1,13 @@
-Web Dart - Function
+Web Dart - Classes
 =============
 
-The Function project is an introductory to the Dart programming language functions and logic.
+The Classes project is an introductory to the Dart programming language classes: attributes & methods.
 
 Usage
 -----
 
 ```
-dart [filename]-main.dart
-dart [filename]-main.dart [integer] [integer]
+dart []-main.dart
 ```
 
 Contributing
