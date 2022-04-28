@@ -7,8 +7,8 @@ Usage
 -----
 
 ```
-dart [filename]-main.dart
-dart [filename]-main.dart [integer] [integer]
+dart [0-10]-main.dart
+dart [2]-main.dart [integer] [integer]
 ```
 
 Contributing

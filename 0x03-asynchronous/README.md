@@ -1,7 +1,7 @@
-Web Dart - Classes
+Web Dart - Asynchronous
 =============
 
-The Classes project is an introductory to the Dart programming language classes: attributes & methods.
+The Asynchronous project is an introductory to the Dart programming language async and flutter.
 
 Usage
 -----
