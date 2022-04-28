@@ -5,9 +5,7 @@ class Password {
 
   set password(String password) => _password = password;
 
-
   Password({required String password}) : _password = password;
-  
 
   bool isValid() =>
       password.length >= 8 &&
