@@ -1,4 +1,4 @@
-name: quotes
+name: quotes.dart
 
 dependencies:
   http: ^0.13.3
