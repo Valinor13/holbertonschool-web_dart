@@ -9,7 +9,7 @@ import 'package:http/http.dart' as http;
 Future<String> generateQuote(int id) async {
   try {
     // get the data from the url
-    var response =
+    http.Response response =
         await http.get(Uri.parse('https://breakingbadapi.com/api/quotes/$id'));
     // decode the data
     var quote = json.decode(response.body);
