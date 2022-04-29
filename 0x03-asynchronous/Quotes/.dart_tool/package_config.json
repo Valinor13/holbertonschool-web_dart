@@ -68,13 +68,13 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "breaking_bad",
+      "name": "quotes.dart",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.10"
     }
   ],
-  "generated": "2022-04-29T00:09:04.307907Z",
+  "generated": "2022-04-29T00:09:12.638795Z",
   "generator": "pub",
   "generatorVersion": "2.16.2"
 }
