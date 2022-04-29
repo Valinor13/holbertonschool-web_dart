@@ -1,5 +1,6 @@
-import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'dart:async';
+import 'dart:convert';
 
 // generateQuote - fetch first quote from character and corresponding id
 //   http request https://breakingbadapi.com/api/quotes/@id to get quote
@@ -12,7 +13,7 @@ Future<String> generateQuote(int id) async {
     http.Response response =
         await http.get(Uri.parse('https://breakingbadapi.com/api/quotes/$id'));
     // decode the data
-    var quote = json.decode(response.body);
+    var quote = jsonDecode(response.body);
     // print the data
     return "${quote[0]['author']} : ${quote[0]['quote']}";
   } catch (e) {
