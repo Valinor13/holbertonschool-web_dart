@@ -8,8 +8,7 @@ import '4-main.dart';
 // returns: the sum of all product prices
 Future<double> calculateTotal() async {
   try {
-    final Map<String, dynamic> userData =
-        await json.decode(await fetchUserData());
+    final Map<String, dynamic> userData = json.decode(await fetchUserData());
     final String id = userData['id'];
     final List<dynamic> userOrders = json.decode(await fetchUserOrders(id));
     double total = 0;
